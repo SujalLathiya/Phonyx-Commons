@@ -1,8 +1,8 @@
 package com.phonyx.commons.helpers
 
 import android.app.Activity
+import android.telephony.PhoneNumberUtils
 import com.phonyx.commons.extensions.addBlockedNumber
-import com.phonyx.commons.extensions.isPhoneNumber
 import com.phonyx.commons.extensions.showErrorToast
 import java.io.File
 
@@ -18,7 +18,7 @@ class BlockedNumbersImporter(
             val inputStream = File(path).inputStream()
             val numbers = inputStream.bufferedReader().use {
                 val content = it.readText().trimEnd().split(BLOCKED_NUMBERS_EXPORT_DELIMITER)
-                content.filter { text -> text.isPhoneNumber() }
+                content.filter { text -> PhoneNumberUtils.isGlobalPhoneNumber(text) }
             }
             if (numbers.isNotEmpty()) {
                 numbers.forEach { number ->
