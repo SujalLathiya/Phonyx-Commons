@@ -9,13 +9,9 @@ import com.phonyx.commons.helpers.DARK_GREY
 import com.phonyx.commons.helpers.isSPlus
 import com.phonyx.commons.views.*
 
-fun Context.isDynamicTheme() = isSPlus() && baseConfig.isSystemThemeEnabled
-
 fun Context.isBlackAndWhiteTheme() = baseConfig.textColor == Color.WHITE && baseConfig.primaryColor == Color.BLACK && baseConfig.backgroundColor == Color.BLACK
 
 fun Context.isWhiteTheme() = baseConfig.textColor == DARK_GREY && baseConfig.primaryColor == Color.WHITE && baseConfig.backgroundColor == Color.WHITE
-
-fun Context.isAutoTheme() = !isSPlus() && baseConfig.isSystemThemeEnabled
 
 fun Context.getProperTextColor() = resources.getColor(R.color.you_neutral_text_color, theme)
 

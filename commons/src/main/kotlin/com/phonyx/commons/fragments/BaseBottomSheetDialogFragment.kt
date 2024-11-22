@@ -20,13 +20,8 @@ abstract class BaseBottomSheetDialogFragment : BottomSheetDialogFragment() {
     ): View? {
         val view = DialogBottomSheetBinding.inflate(inflater, container, false)
         val context = requireContext()
-
         if (requireContext().isBlackAndWhiteTheme()) {
             view.root.background = ResourcesCompat.getDrawable(context.resources, R.drawable.bottom_sheet_bg_black, context.theme)
-        } else if (!context.isDynamicTheme()) {
-            view.root.background = ResourcesCompat.getDrawable(context.resources, R.drawable.bottom_sheet_bg, context.theme).apply {
-                (this as LayerDrawable).findDrawableByLayerId(R.id.bottom_sheet_background).applyColorFilter(context.getProperBackgroundColor())
-            }
         }
         return view.root
     }

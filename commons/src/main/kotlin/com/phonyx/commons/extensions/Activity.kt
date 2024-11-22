@@ -257,23 +257,7 @@ fun BaseSimpleActivity.showOTGPermissionDialog(path: String) {
     }
 }
 
-fun Activity.launchPurchaseThankYouIntent() {
-    hideKeyboard()
-    try {
-        launchViewIntent("market://details?id=com.phonyx.thankyou")
-    } catch (ignored: Exception) {
-        launchViewIntent(getString(R.string.thank_you_url))
-    }
-}
 
-fun Activity.launchUpgradeToProIntent() {
-    hideKeyboard()
-    try {
-        launchViewIntent("market://details?id=${baseConfig.appId.removeSuffix(".debug")}.pro")
-    } catch (ignored: Exception) {
-        launchViewIntent(getStoreUrl())
-    }
-}
 
 fun Activity.launchViewIntent(id: Int) = launchViewIntent(getString(id))
 
@@ -1432,11 +1416,7 @@ fun Activity.setupDialogStuff(
             getButton(AlertDialog.BUTTON_NEGATIVE).setTextColor(dialogButtonColor)
             getButton(AlertDialog.BUTTON_NEUTRAL).setTextColor(dialogButtonColor)
 
-            val bgDrawable = when {
-                isBlackAndWhiteTheme() -> resources.getDrawable(R.drawable.black_dialog_background, theme)
-                isDynamicTheme() -> resources.getDrawable(R.drawable.dialog_you_background, theme)
-                else -> resources.getColoredDrawableWithColor(R.drawable.dialog_bg, baseConfig.backgroundColor)
-            }
+            val bgDrawable =  resources.getDrawable(R.drawable.dialog_you_background, theme)
 
             window?.setBackgroundDrawable(bgDrawable)
             callback?.invoke(this)
@@ -1444,11 +1424,7 @@ fun Activity.setupDialogStuff(
     }
 }
 
-fun Activity.getAlertDialogBuilder() = if (isDynamicTheme()) {
-    MaterialAlertDialogBuilder(this)
-} else {
-    AlertDialog.Builder(this)
-}
+fun Activity.getAlertDialogBuilder() = MaterialAlertDialogBuilder(this)
 
 fun Activity.showPickSecondsDialogHelper(
     curMinutes: Int, isSnoozePicker: Boolean = false, showSecondsAtCustomDialog: Boolean = false, showDuringDayOption: Boolean = false,

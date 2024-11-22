@@ -53,9 +53,5 @@ fun View.fadeOut(duration: Long = SHORT_ANIMATION_DURATION) {
 }
 
 fun View.setupViewBackground(context: Context) {
-    background = if (context.isDynamicTheme()) {
-        resources.getDrawable(R.drawable.selector_clickable_you)
-    } else {
-        resources.getDrawable(R.drawable.selector_clickable)
-    }
+    background = resources.getDrawable(R.drawable.selector_clickable_you)
 }
