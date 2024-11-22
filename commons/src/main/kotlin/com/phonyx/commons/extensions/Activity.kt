@@ -496,12 +496,6 @@ fun BaseSimpleActivity.launchCallIntent(recipient: String, handle: PhoneAccountH
                 putExtra(TelecomManager.EXTRA_PHONE_ACCOUNT_HANDLE, handle)
             }
 
-            if (isDefaultDialer()) {
-                val packageName = if (baseConfig.appId.contains(".debug", true)) "com.phonyx.phone.debug" else "com.phonyx.phone"
-                val className = "com.phonyx.phone.activities.DialerActivity"
-                setClassName(packageName, className)
-            }
-
             launchActivityIntent(this)
         }
     }
