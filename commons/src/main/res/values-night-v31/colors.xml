@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="color_primary">#aac7ff</color>
+
+    <color name="you_status_bar_color">#111318</color>
+    <color name="you_contextual_status_bar_color">#111318</color>
+    <color name="you_background_color">#111318</color>
+    <color name="you_neutral_text_color">#e2e2e9</color>
+    <color name="you_primary_color">#aac7ff</color>
+    <color name="you_secondary_container_color">#80AAC7FF</color>
+    <color name="you_primary_dark_color">#bec6dc</color>
+    <color name="you_surface_color">#c4c6d0</color>
+    <color name="you_dialog_background_color">#282a2f</color>
+    <color name="you_selected_item_background_color">#1d2024</color>
+    <color name="you_ripple_color">#191c20</color>
+    <color name="you_on_primary_dark_color">#0a305f</color>
+    <color name="you_outline_color">#8e9099</color>
+    <color name="you_surface_container_highest_color">#636363</color>
+</resources>

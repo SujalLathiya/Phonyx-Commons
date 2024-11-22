@@ -1,0 +1,31 @@
+<resources>
+
+    <style name="AppTheme" parent="AppTheme.DayNight" />
+
+    <style name="FullScreenTheme.Base" parent="AppTheme">
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowTranslucentNavigation">true</item>
+    </style>
+
+    <style name="FullScreenTheme" parent="FullScreenTheme.Base" />
+    <!-- res/values/styles.xml -->
+    <style name="FullScreenDialogAnimation">
+        <item name="android:windowEnterAnimation">@anim/slide_up</item>
+        <item name="android:windowExitAnimation">@anim/slide_down</item>
+    </style>
+
+    <style name="ToolbarSubtitleAppearance" parent="@style/TextAppearance.MaterialComponents.Subtitle1">
+        <item name="android:textSize">14sp</item>
+        <item name="textAllCaps">true</item>
+    </style>
+
+    <style name="ToolbarTitleAppearance">
+        <item name="android:textSize">32sp</item>
+        <item name="textAllCaps">true</item>
+    </style>
+
+    <style name="circleImageView">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">20dp</item>
+    </style>
+</resources>

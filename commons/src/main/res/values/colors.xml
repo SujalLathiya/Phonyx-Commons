@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="color_primary">#415f91</color>
+
+    <color name="pressed_item_foreground">#08000000</color>
+    <color name="activated_item_foreground">#44888888</color>
+    <color name="divider_grey">#55808080</color>
+    <color name="gradient_grey_start">#CC000000</color>
+    <color name="dark_grey">#FF333333</color>
+    <color name="disabled_text_color_highlight">#00FFFFFF</color>0
+
+    <color name="hint_white">#99FFFFFF</color>
+    <color name="hint_black">#66000000</color>
+    <color name="light_grey_stroke">#40FFFFFF</color>
+    <color name="md_grey_white">#FFFFFF</color>
+    <color name="md_grey_black">#000000</color>
+    <color name="md_grey_black_dark">#000000</color>
+
+    <color name="you_status_bar_color">#f9f9ff</color>
+    <color name="you_contextual_status_bar_color">#f9f9ff</color>
+    <color name="you_background_color">#f9f9ff</color>
+    <color name="you_neutral_text_color">#191c20</color>
+    <color name="you_primary_color">#415f91</color>
+    <color name="you_secondary_container_color">#80415F91</color>
+    <color name="you_primary_dark_color">#565f71</color>
+    <color name="you_surface_color">#44474e</color>
+    <color name="you_dialog_background_color">#e7e8ee</color>
+    <color name="you_selected_item_background_color">#ededf4</color>
+    <color name="you_ripple_color">#f3f3fa</color>
+    <color name="you_on_primary_dark_color">#ffffff</color>
+    <color name="you_outline_color">#74777f</color>
+    <color name="you_surface_container_highest_color">#D7D7D7</color>
+
+    <color name="md_red">#F44336</color>
+    <color name="md_red_700">#D32F2F</color>
+    <color name="md_blue_700">#1976D2</color>
+    <color name="md_green_700">#388E3C</color>
+    <color name="md_yellow_700">#FBC02D</color>
+    <color name="md_orange_700">#F57C00</color>
+
+</resources>
+
