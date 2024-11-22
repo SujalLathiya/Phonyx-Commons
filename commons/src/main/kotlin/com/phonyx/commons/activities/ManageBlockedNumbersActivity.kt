@@ -60,8 +60,7 @@ class ManageBlockedNumbersActivity : BaseSimpleActivity(), RefreshRecyclerViewLi
     }
 
     private fun setupBlockHidden() {
-        val blockHiddenTitleRes =
-            if (baseConfig.appId.startsWith("com.simplemobiletools.dialer")) R.string.block_hidden_calls else R.string.block_hidden_messages
+        val blockHiddenTitleRes = R.string.block_hidden_calls
 
         binding.blockHidden.apply {
             setText(blockHiddenTitleRes)
