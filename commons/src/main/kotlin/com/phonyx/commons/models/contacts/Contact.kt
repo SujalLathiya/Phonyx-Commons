@@ -3,12 +3,12 @@ package com.phonyx.commons.models.contacts
 import android.graphics.Bitmap
 import android.provider.ContactsContract
 import android.telephony.PhoneNumberUtils
-import kotlinx.serialization.Contextual
-import kotlinx.serialization.Serializable
 import com.phonyx.commons.extensions.normalizePhoneNumber
 import com.phonyx.commons.extensions.normalizeString
 import com.phonyx.commons.helpers.*
 import com.phonyx.commons.models.PhoneNumber
+import kotlinx.serialization.Contextual
+import kotlinx.serialization.Serializable
 import java.util.Locale
 
 @Serializable

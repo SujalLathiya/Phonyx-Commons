@@ -1392,7 +1392,7 @@ fun Activity.setupDialogStuff(
         }
 
         // if we use the same primary and background color, use the text color for dialog confirmation buttons
-        val dialogButtonColor = if (primaryColor == baseConfig.backgroundColor) {
+        val dialogButtonColor = if (primaryColor == getProperBackgroundColor()) {
             textColor
         } else {
             primaryColor

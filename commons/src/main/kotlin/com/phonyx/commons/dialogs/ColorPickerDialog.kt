@@ -52,7 +52,7 @@ class ColorPickerDialog(
 ) {
     private val baseConfig = activity.baseConfig
     private val currentColorHsv = Hsv(FloatArray(3))
-    private val backgroundColor = baseConfig.backgroundColor
+    private val backgroundColor = activity.getProperBackgroundColor()
     private var wasDimmedBackgroundRemoved = false
     private var dialog: AlertDialog? = null
     private val binding = DialogColorPickerBinding.inflate(activity.layoutInflater, null, false)

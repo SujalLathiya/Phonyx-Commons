@@ -6,6 +6,7 @@
         <item name="colorOnPrimary">@color/you_on_primary_dark_color</item>
         <item name="colorOutline">@color/you_outline_color</item>
         <item name="colorSurfaceContainerHighest">@color/you_surface_container_highest_color</item>
+        <item name="colorSurfaceContainerHigh">@color/you_surface_container_highest_color</item>
         <item name="colorPrimaryDark">@color/you_primary_dark_color</item>
         <item name="colorAccent">@color/you_primary_color</item>
         <item name="colorPrimaryContainer">@color/you_primary_color</item>
@@ -30,5 +31,6 @@
         <item name="android:radioButtonStyle">@style/MyRadioButtonStyle</item>
         <item name="radioButtonStyle">@style/MyRadioButtonStyle</item>
     </style>
+
 
 </resources>

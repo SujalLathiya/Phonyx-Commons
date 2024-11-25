@@ -6,13 +6,13 @@ import android.content.DialogInterface
 import android.view.KeyEvent
 import android.view.View
 import androidx.appcompat.app.AlertDialog
-import kotlinx.collections.immutable.toImmutableList
 import com.phonyx.commons.R
 import com.phonyx.commons.databinding.DialogCustomIntervalPickerBinding
 import com.phonyx.commons.extensions.*
 import com.phonyx.commons.helpers.DAY_SECONDS
 import com.phonyx.commons.helpers.HOUR_SECONDS
 import com.phonyx.commons.helpers.MINUTE_SECONDS
+import kotlinx.collections.immutable.toImmutableList
 
 class CustomIntervalPickerDialog(val activity: Activity, val selectedSeconds: Int = 0, val showSeconds: Boolean = false, val callback: (minutes: Int) -> Unit) {
     private var dialog: AlertDialog? = null

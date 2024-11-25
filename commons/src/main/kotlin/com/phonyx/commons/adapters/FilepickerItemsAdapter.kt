@@ -11,7 +11,6 @@ import com.bumptech.glide.load.resource.bitmap.CenterCrop
 import com.bumptech.glide.load.resource.bitmap.RoundedCorners
 import com.bumptech.glide.load.resource.drawable.DrawableTransitionOptions.withCrossFade
 import com.bumptech.glide.request.RequestOptions
-import com.qtalk.recyclerviewfastscroller.RecyclerViewFastScroller
 import com.phonyx.commons.R
 import com.phonyx.commons.activities.BaseSimpleActivity
 import com.phonyx.commons.databinding.ItemFilepickerListBinding
@@ -19,6 +18,7 @@ import com.phonyx.commons.extensions.*
 import com.phonyx.commons.helpers.getFilePlaceholderDrawables
 import com.phonyx.commons.models.FileDirItem
 import com.phonyx.commons.views.MyRecyclerView
+import com.qtalk.recyclerviewfastscroller.RecyclerViewFastScroller
 import java.util.Locale
 
 class FilepickerItemsAdapter(

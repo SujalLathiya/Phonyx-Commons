@@ -139,7 +139,7 @@ abstract class BaseSimpleActivity : AppCompatActivity() {
         }
     }
 
-    fun updateBackgroundColor(color: Int = baseConfig.backgroundColor) {
+    fun updateBackgroundColor(color: Int = getProperBackgroundColor()) {
         window.decorView.setBackgroundColor(color)
     }
 

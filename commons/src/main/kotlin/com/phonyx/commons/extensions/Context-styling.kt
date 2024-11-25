@@ -2,21 +2,14 @@ package com.phonyx.commons.extensions
 
 import android.annotation.SuppressLint
 import android.content.Context
-import android.graphics.Color
 import android.view.ViewGroup
 import com.phonyx.commons.R
-import com.phonyx.commons.helpers.DARK_GREY
-import com.phonyx.commons.helpers.isSPlus
 import com.phonyx.commons.views.*
 
-fun Context.isBlackAndWhiteTheme() = baseConfig.textColor == Color.WHITE && baseConfig.primaryColor == Color.BLACK && baseConfig.backgroundColor == Color.BLACK
-
-fun Context.isWhiteTheme() = baseConfig.textColor == DARK_GREY && baseConfig.primaryColor == Color.WHITE && baseConfig.backgroundColor == Color.WHITE
 
 fun Context.getProperTextColor() = resources.getColor(R.color.you_neutral_text_color, theme)
 
 fun Context.getProperBackgroundColor() = resources.getColor(R.color.you_background_color, theme)
-
 
 fun Context.getProperPrimaryColor() = resources.getColor(R.color.you_primary_color, theme)
 
@@ -30,11 +23,8 @@ fun Context.getColoredMaterialStatusBarColor(): Int {
 fun Context.updateTextColors(viewGroup: ViewGroup) {
     val textColor =  getProperTextColor()
 
-    val backgroundColor = baseConfig.backgroundColor
-    val accentColor = when {
-        isWhiteTheme() || isBlackAndWhiteTheme() -> baseConfig.accentColor
-        else -> getProperPrimaryColor()
-    }
+    val backgroundColor = getProperBackgroundColor()
+    val accentColor =  getProperPrimaryColor()
 
     val cnt = viewGroup.childCount
     (0 until cnt).map { viewGroup.getChildAt(it) }.forEach {

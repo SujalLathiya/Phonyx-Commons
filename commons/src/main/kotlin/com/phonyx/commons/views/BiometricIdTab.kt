@@ -5,8 +5,10 @@ import android.util.AttributeSet
 import androidx.biometric.auth.AuthPromptHost
 import androidx.constraintlayout.widget.ConstraintLayout
 import com.phonyx.commons.databinding.TabBiometricIdBinding
-import com.phonyx.commons.extensions.*
-import com.phonyx.commons.helpers.DARK_GREY
+import com.phonyx.commons.extensions.getContrastColor
+import com.phonyx.commons.extensions.getProperPrimaryColor
+import com.phonyx.commons.extensions.showBiometricPrompt
+import com.phonyx.commons.extensions.updateTextColors
 import com.phonyx.commons.interfaces.HashListener
 import com.phonyx.commons.interfaces.SecurityTab
 
@@ -18,12 +20,7 @@ class BiometricIdTab(context: Context, attrs: AttributeSet) : ConstraintLayout(c
         super.onFinishInflate()
         binding = TabBiometricIdBinding.bind(this)
         context.updateTextColors(binding.biometricLockHolder)
-        val textColor = if (context.isWhiteTheme()) {
-            DARK_GREY
-        } else {
-            context.getProperPrimaryColor().getContrastColor()
-        }
-
+        val textColor = context.getProperPrimaryColor().getContrastColor()
         binding.openBiometricDialog.setTextColor(textColor)
         binding.openBiometricDialog.setOnClickListener {
             biometricPromptHost.activity?.showBiometricPrompt(successCallback = hashListener::receivedHash)

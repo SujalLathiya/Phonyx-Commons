@@ -6,13 +6,13 @@ import android.view.ViewGroup
 import android.widget.RadioButton
 import android.widget.RadioGroup
 import androidx.appcompat.app.AlertDialog
-import kotlinx.collections.immutable.ImmutableList
 import com.phonyx.commons.R
 import com.phonyx.commons.databinding.DialogRadioGroupBinding
 import com.phonyx.commons.extensions.getAlertDialogBuilder
 import com.phonyx.commons.extensions.onGlobalLayout
 import com.phonyx.commons.extensions.setupDialogStuff
 import com.phonyx.commons.models.RadioItem
+import kotlinx.collections.immutable.ImmutableList
 
 class RadioGroupDialog(
     val activity: Activity, val items: ArrayList<RadioItem>, val checkedItemId: Int = -1, val titleId: Int = 0,

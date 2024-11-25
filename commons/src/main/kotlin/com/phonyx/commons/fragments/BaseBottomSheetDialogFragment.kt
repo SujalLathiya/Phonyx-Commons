@@ -1,15 +1,13 @@
 package com.phonyx.commons.fragments
 
-import android.graphics.drawable.LayerDrawable
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import androidx.core.content.res.ResourcesCompat
 import com.google.android.material.bottomsheet.BottomSheetDialogFragment
-import com.phonyx.commons.R
 import com.phonyx.commons.databinding.DialogBottomSheetBinding
-import com.phonyx.commons.extensions.*
+import com.phonyx.commons.extensions.getProperTextColor
+import com.phonyx.commons.extensions.setTextOrBeGone
 
 abstract class BaseBottomSheetDialogFragment : BottomSheetDialogFragment() {
 
@@ -19,10 +17,6 @@ abstract class BaseBottomSheetDialogFragment : BottomSheetDialogFragment() {
         savedInstanceState: Bundle?
     ): View? {
         val view = DialogBottomSheetBinding.inflate(inflater, container, false)
-        val context = requireContext()
-        if (requireContext().isBlackAndWhiteTheme()) {
-            view.root.background = ResourcesCompat.getDrawable(context.resources, R.drawable.bottom_sheet_bg_black, context.theme)
-        }
         return view.root
     }
 

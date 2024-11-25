@@ -81,49 +81,6 @@ open class BaseConfig(val context: Context) {
 
     private fun getDefaultInternalPath() = if (prefs.contains(INTERNAL_STORAGE_PATH)) "" else context.getInternalStoragePath()
 
-    var textColor: Int
-        get() = prefs.getInt(TEXT_COLOR, ContextCompat.getColor(context, R.color.you_neutral_text_color))
-        set(textColor) = prefs.edit().putInt(TEXT_COLOR, textColor).apply()
-
-    var backgroundColor: Int
-        get() = prefs.getInt(BACKGROUND_COLOR, ContextCompat.getColor(context, R.color.you_background_color))
-        set(backgroundColor) = prefs.edit().putInt(BACKGROUND_COLOR, backgroundColor).apply()
-
-    var primaryColor: Int
-        get() = prefs.getInt(PRIMARY_COLOR, ContextCompat.getColor(context, R.color.you_primary_dark_color))
-        set(primaryColor) = prefs.edit().putInt(PRIMARY_COLOR, primaryColor).apply()
-
-    var accentColor: Int
-        get() = prefs.getInt(ACCENT_COLOR, ContextCompat.getColor(context, R.color.you_primary_dark_color))
-        set(accentColor) = prefs.edit().putInt(ACCENT_COLOR, accentColor).apply()
-
-    var lastHandledShortcutColor: Int
-        get() = prefs.getInt(LAST_HANDLED_SHORTCUT_COLOR, 1)
-        set(lastHandledShortcutColor) = prefs.edit().putInt(LAST_HANDLED_SHORTCUT_COLOR, lastHandledShortcutColor).apply()
-
-    var customTextColor: Int
-        get() = prefs.getInt(CUSTOM_TEXT_COLOR, textColor)
-        set(customTextColor) = prefs.edit().putInt(CUSTOM_TEXT_COLOR, customTextColor).apply()
-
-    var customBackgroundColor: Int
-        get() = prefs.getInt(CUSTOM_BACKGROUND_COLOR, backgroundColor)
-        set(customBackgroundColor) = prefs.edit().putInt(CUSTOM_BACKGROUND_COLOR, customBackgroundColor).apply()
-
-    var customPrimaryColor: Int
-        get() = prefs.getInt(CUSTOM_PRIMARY_COLOR, primaryColor)
-        set(customPrimaryColor) = prefs.edit().putInt(CUSTOM_PRIMARY_COLOR, customPrimaryColor).apply()
-
-    var customAccentColor: Int
-        get() = prefs.getInt(CUSTOM_ACCENT_COLOR, accentColor)
-        set(customAccentColor) = prefs.edit().putInt(CUSTOM_ACCENT_COLOR, customAccentColor).apply()
-
-    var widgetBgColor: Int
-        get() = prefs.getInt(WIDGET_BG_COLOR, ContextCompat.getColor(context, R.color.you_background_color))
-        set(widgetBgColor) = prefs.edit().putInt(WIDGET_BG_COLOR, widgetBgColor).apply()
-
-    var widgetTextColor: Int
-        get() = prefs.getInt(WIDGET_TEXT_COLOR, ContextCompat.getColor(context, R.color.you_neutral_text_color))
-        set(widgetTextColor) = prefs.edit().putInt(WIDGET_TEXT_COLOR, widgetTextColor).apply()
 
     // hidden folder visibility protection
     var isHiddenPasswordProtectionOn: Boolean

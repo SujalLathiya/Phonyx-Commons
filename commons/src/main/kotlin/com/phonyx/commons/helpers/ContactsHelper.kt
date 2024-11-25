@@ -11,13 +11,13 @@ import android.provider.ContactsContract.*
 import android.provider.MediaStore
 import android.text.TextUtils
 import android.util.SparseArray
-import kotlinx.serialization.encodeToString
-import kotlinx.serialization.json.Json
 import com.phonyx.commons.R
 import com.phonyx.commons.extensions.*
 import com.phonyx.commons.models.PhoneNumber
 import com.phonyx.commons.models.contacts.*
 import com.phonyx.commons.overloads.times
+import kotlinx.serialization.encodeToString
+import kotlinx.serialization.json.Json
 import java.io.OutputStream
 import java.util.Locale
 

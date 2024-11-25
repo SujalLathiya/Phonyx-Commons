@@ -15,9 +15,9 @@
 
     <color name="you_status_bar_color">#f9f9ff</color>
     <color name="you_contextual_status_bar_color">#f9f9ff</color>
-    <color name="you_background_color">#f9f9ff</color>
-    <color name="you_neutral_text_color">#191c20</color>
-    <color name="you_primary_color">#415f91</color>
+    <color name="you_background_color">#F3F4F9</color>
+    <color name="you_neutral_text_color">#001E2F</color>
+    <color name="you_primary_color">#1B72C0</color>
     <color name="you_secondary_container_color">#80415F91</color>
     <color name="you_primary_dark_color">#565f71</color>
     <color name="you_surface_color">#44474e</color>
@@ -25,8 +25,8 @@
     <color name="you_selected_item_background_color">#ededf4</color>
     <color name="you_ripple_color">#f3f3fa</color>
     <color name="you_on_primary_dark_color">#ffffff</color>
-    <color name="you_outline_color">#74777f</color>
-    <color name="you_surface_container_highest_color">#D7D7D7</color>
+    <color name="you_outline_color">#E7E9F2</color>
+    <color name="you_surface_container_highest_color">#FFFFFF</color>
 
 
     <!-- Primary colors -->

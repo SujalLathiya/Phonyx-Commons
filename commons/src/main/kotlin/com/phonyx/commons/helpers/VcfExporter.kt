@@ -7,11 +7,6 @@ import android.provider.ContactsContract.CommonDataKinds.Im
 import android.provider.ContactsContract.CommonDataKinds.Phone
 import android.provider.ContactsContract.CommonDataKinds.StructuredPostal
 import android.provider.MediaStore
-import ezvcard.Ezvcard
-import ezvcard.VCard
-import ezvcard.VCardVersion
-import ezvcard.parameter.ImageType
-import ezvcard.property.*
 import com.phonyx.commons.R
 import com.phonyx.commons.activities.BaseSimpleActivity
 import com.phonyx.commons.extensions.getByteArray
@@ -19,6 +14,11 @@ import com.phonyx.commons.extensions.getDateTimeFromDateString
 import com.phonyx.commons.extensions.showErrorToast
 import com.phonyx.commons.extensions.toast
 import com.phonyx.commons.models.contacts.Contact
+import ezvcard.Ezvcard
+import ezvcard.VCard
+import ezvcard.VCardVersion
+import ezvcard.parameter.ImageType
+import ezvcard.property.*
 import java.io.OutputStream
 import java.util.Calendar
 
